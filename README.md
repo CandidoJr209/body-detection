@@ -1,4 +1,4 @@
-# Body-detection
+# body-detection
 ## A compilation of codes aimed at detecting body parts
 
 There are many techniches to locate body parts on an image or video.
