@@ -1,7 +1,10 @@
 import cv2
-import numpy as np
+import os
 
-detection_face = cv2.CascadeClassifier('haarcascades_xmls/haarcascade_frontalface_default.xml')
+haarcascade_files_path = os.path.abspath(os.path.join( \
+    os.path.dirname( __file__ ), '..', 'haarcascade_xmls')
+    )
+detection_face = cv2.CascadeClassifier(haarcascade_files_path + '/haarcascade_frontalface_default.xml')
 
 cap = cv2.VideoCapture(0)
 
